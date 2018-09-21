@@ -10,7 +10,7 @@ import java.util.List;
  */
 @Data
 public class MOUAgreementCompleteReq {
-    private MOUAgreement mouAgreement;
-    private Customer customer;
-    private List<MOUAgreementBudgetType> mouAgreementBudgetTypes;
+    private List<MOUAgreement> mouAgreements;
+    /*private List<Customer> customers;
+    private List<MOUAgreementBudgetType> mouAgreementBudgetTypes;*/
 }

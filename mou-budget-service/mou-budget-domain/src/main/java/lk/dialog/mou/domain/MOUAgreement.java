@@ -3,6 +3,7 @@ package lk.dialog.mou.domain;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by Aux072 on 13/09/2018.
@@ -22,5 +23,8 @@ public class MOUAgreement {
     private String description;
     private Boolean active;
     private Double amount;
+    private List<MOUAgreementBudgetType> mouAgreementBudgetTypes;
+    private List<Customer> customers;
+    //private List<CustomerMOUAgreement> customerMOUAgreements;
 
 }

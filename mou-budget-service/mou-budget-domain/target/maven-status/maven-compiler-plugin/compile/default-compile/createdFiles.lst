@@ -6,5 +6,6 @@ lk\dialog\mou\domain\MOUAgreement.class
 lk\dialog\mou\domain\MOUAgreementCompleteReq.class
 lk\dialog\mou\domain\Budget.class
 lk\dialog\mou\domain\ReleaseFrequency.class
+lk\dialog\mou\domain\MOUAgreementCompleteResp.class
 lk\dialog\mou\domain\User.class
 lk\dialog\mou\domain\MOUAgreementBudgetType.class

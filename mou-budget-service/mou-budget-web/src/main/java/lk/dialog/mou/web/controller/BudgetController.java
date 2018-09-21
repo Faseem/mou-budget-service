@@ -3,6 +3,7 @@ package lk.dialog.mou.web.controller;
 import lk.dialog.mou.aspect.annotations.EnableAudit;
 import lk.dialog.mou.domain.Budget;
 import lk.dialog.mou.domain.BudgetType;
+import lk.dialog.mou.domain.MOUAgreementBudgetType;
 import lk.dialog.mou.web.service.budget.BudgetService;
 import lk.dialog.mou.web.util.APIResponse;
 import lk.dialog.mou.web.util.ResponseBuilder;
@@ -32,6 +33,14 @@ public class BudgetController {
             budgetsSaved.add(budgetSaved);
         }
         return ResponseBuilder.build(ResponseBuilder.success(budgetsSaved));
+    }
+
+    @EnableAudit(description = "getBudgetsForMouAgreementBudgetType")
+    @GetMapping(value = "/getBudgetsForMouAgreementBudgetType")
+    ResponseEntity<APIResponse> getBudgetsForMouAgreementBudgetType(MOUAgreementBudgetType mouAgreementBudgetType, @RequestHeader(value = "user") String user) {
+        return ResponseBuilder.build(ResponseBuilder.success(
+                budgetService.getBudgetsForMouAgreementBudgetTypeId(mouAgreementBudgetType.getMouAgreementBudgetTypeId())
+        ));
     }
 
 }

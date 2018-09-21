@@ -14,7 +14,7 @@ public class MOUAgreementBudgetType {
     private ReleaseFrequency releaseFrequency;
     private Double amount;
     private Long mouAgreementId;
-    private Long customerId;
-    private Long customerMouAgreementId;
+    //private Long customerId;
+    //private Long customerMouAgreementId;
     private List<Budget> budgetList;
 }
