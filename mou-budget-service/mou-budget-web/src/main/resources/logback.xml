@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOG_DIR" value="logs/mou-budget-service"/>
+    <property name="LOG_FILE" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/spring.log}"/>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+
+    <appender name="auditLogAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/audit.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/audit-%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p %mdc --- [%t] %C{1} : %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="trace" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/request-trace.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/request-trace-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p %mdc --- [%t] %-40.40c{1.} : %m%n</pattern>
+        </encoder>
+    </appender>
+
+
+
+
+    <appender name="ERROR_LOG_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/error-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p %mdc --- [%t] %C{1} : %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--spring log appender-->
+
+    <appender name="SPRING_LOG_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/spring.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/spring-%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p %mdc --- [%t] %C{1} : %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="TRACKED_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/tracked.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/tracked-%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p %mdc --- [%t] %C{1} : %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="lk.dialog.mou" level="debug">
+        <appender-ref ref="SPRING_LOG_APPENDER"/>
+    </logger>
+
+    <logger name="org.springframework" level="debug">
+        <appender-ref ref="SPRING_LOG_APPENDER"/>
+    </logger>
+
+    <logger name="org.apache" level="error">
+        <appender-ref ref="SPRING_LOG_APPENDER"/>
+    </logger>
+
+    <logger name="lk.dialog.mou.aspect" level="off">
+        <appender-ref ref="SPRING_LOG_APPENDER"/>
+    </logger>
+    <logger name="auditLog" level="debug">
+        <appender-ref ref="auditLogAppender"/>
+    </logger>
+
+    <logger name="TRACKED_LOGGER" level="debug">
+        <appender-ref ref="TRACKED_APPENDER"/>
+    </logger>
+
+    <logger name="org.springframework" level="ERROR">
+        <appender-ref ref="ERROR_LOG_APPENDER"/>
+    </logger>
+
+    <logger name="com" level="error">
+        <appender-ref ref="ERROR_LOG_APPENDER"/>
+    </logger>
+
+    <logger name="lk.dialog" level="error">
+        <appender-ref ref="ERROR_LOG_APPENDER"/>
+    </logger>
+
+    <logger name="trace" level="debug">
+        <appender-ref ref="trace"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+</configuration>

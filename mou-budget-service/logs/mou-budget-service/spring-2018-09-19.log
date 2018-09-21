@@ -1,0 +1,224 @@
+2018-09-19 08:24:05.224  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 2028 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 08:24:05.262 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 08:24:05.263  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 08:24:19.053  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 15.133 seconds (JVM running for 18.703)
+2018-09-19 08:28:32.894  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 7536 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 08:28:32.903 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 08:28:32.904  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 08:28:44.747  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.914 seconds (JVM running for 13.871)
+2018-09-19 08:41:42.894  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 8100 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 08:41:42.903 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 08:41:42.903  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 08:41:53.719  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 11.924 seconds (JVM running for 12.983)
+2018-09-19 08:45:53.360  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 8420 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 08:45:53.364 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 08:45:53.365  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 08:46:04.694  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.741 seconds (JVM running for 14.18)
+2018-09-19 08:47:51.223  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 7644 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 08:47:51.229 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 08:47:51.229  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 08:48:02.915  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.911 seconds (JVM running for 14.017)
+2018-09-19 08:50:55.664  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 1888 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 08:50:55.670 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 08:50:55.671  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 08:51:06.146  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 11.909 seconds (JVM running for 12.98)
+2018-09-19 08:58:31.270  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 6884 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 08:58:31.276 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 08:58:31.277  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 08:58:44.457  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.32 seconds (JVM running for 15.434)
+2018-09-19 10:46:05.256  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10120 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 10:46:05.263 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 10:46:05.264  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 10:46:15.600  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.384 seconds (JVM running for 13.385)
+2018-09-19 10:56:13.243  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9708 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 10:56:13.249 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 10:56:13.250  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 10:56:24.226  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 11.989 seconds (JVM running for 13.014)
+2018-09-19 10:57:13.671  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10216 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 10:57:13.677 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 10:57:13.678  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 10:57:24.729  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.217 seconds (JVM running for 13.508)
+2018-09-19 10:58:08.284  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 5392 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 10:58:08.300 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 10:58:08.300  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 10:58:21.511  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.28 seconds (JVM running for 15.359)
+2018-09-19 12:03:16.693  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9408 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:03:16.700 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:03:16.701  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:03:28.581  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.021 seconds (JVM running for 14.082)
+2018-09-19 12:09:44.462  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9796 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:09:44.469 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:09:44.470  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:09:55.483  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.414 seconds (JVM running for 14.277)
+2018-09-19 12:11:03.053  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 3680 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:11:03.060 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:11:03.060  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:11:14.619  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.782 seconds (JVM running for 13.765)
+2018-09-19 12:12:26.824  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9540 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:12:26.858 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:12:26.858  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:12:37.661  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 11.867 seconds (JVM running for 12.834)
+2018-09-19 12:16:09.862  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9820 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:16:09.869 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:16:09.869  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:16:21.614  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.617 seconds (JVM running for 13.953)
+2018-09-19 12:17:47.873  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 4420 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:17:47.879 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:17:47.880  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:17:59.007  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.374 seconds (JVM running for 13.748)
+2018-09-19 12:19:07.509  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 2200 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:19:07.514 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:19:07.515  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:19:17.983  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 11.526 seconds (JVM running for 12.361)
+2018-09-19 12:23:57.543  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 5360 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:23:57.550 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:23:57.551  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:24:09.330  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.109 seconds (JVM running for 14.091)
+2018-09-19 12:31:08.687  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 5296 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:31:08.694 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:31:08.701  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:31:19.394  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.542 seconds (JVM running for 15.854)
+2018-09-19 12:33:52.654  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10144 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:33:52.658 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:33:52.659  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:34:04.156  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.625 seconds (JVM running for 14.556)
+2018-09-19 12:38:02.876  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9232 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:38:02.884 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:38:02.885  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:38:14.007  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.109 seconds (JVM running for 13.153)
+2018-09-19 12:49:36.028  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 2088 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:49:36.034 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:49:36.035  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:49:39.090 ERROR  --- [main] o.s.b.SpringApplication : Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: lk$dialog$crm$repositoryutil$annotations$EnablePerfLog
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at lk.dialog.mou.web.MOUBudgetServiceApplication.main(MOUBudgetServiceApplication.java:33)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: lk$dialog$crm$repositoryutil$annotations$EnablePerfLog
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: lk$dialog$crm$repositoryutil$annotations$EnablePerfLog
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 15 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error Type referred to is not an annotation type: lk$dialog$crm$repositoryutil$annotations$EnablePerfLog
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 37 common frames omitted
+2018-09-19 12:51:34.604  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 8444 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:51:34.610 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:51:34.611  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:51:37.603 ERROR  --- [main] o.s.b.SpringApplication : Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: lk$dialog$crm$repositoryutil$annotations$EnablePerfLog
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at lk.dialog.mou.web.MOUBudgetServiceApplication.main(MOUBudgetServiceApplication.java:33)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: lk$dialog$crm$repositoryutil$annotations$EnablePerfLog
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: lk$dialog$crm$repositoryutil$annotations$EnablePerfLog
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 15 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error Type referred to is not an annotation type: lk$dialog$crm$repositoryutil$annotations$EnablePerfLog
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 37 common frames omitted
+2018-09-19 12:52:25.846  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 7660 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-19 12:52:25.852 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-19 12:52:25.853  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-19 12:52:37.204  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.38 seconds (JVM running for 13.446)
