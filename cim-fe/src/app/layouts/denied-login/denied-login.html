@@ -1,0 +1,32 @@
+<div>
+  <div style="margin-top: 150px !important;
+  width: 40%;
+  height: 200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.81) !important;
+  border: 1px solid #d4d4d4 !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  position: relative !important;">
+    
+    <div style="text-align: center;margin-top:10px">
+      <img *ngIf="image == 'undefined'" src="assets/img/user.png" class="img-avatar">
+      <img *ngIf="image != 'undefined'" style="height: 9%;width: 9%;" class="img-avatar" src="data:image/png;base64,{{image}}">
+      <label>
+        <span style="font-weight: bold;text-transform: uppercase; color: #91177b;">{{message}}</span>
+      </label>
+    </div>
+
+    <div style="font-weight: bold;text-align: center">
+      <span>Please contact ONECRM
+        <a href="mailto:OneCRMsupport@dialog.lk" target="_top">Support</a>
+      </span>
+    </div>
+
+    <div style="margin-top: 15%;text-align: center">
+      <a href="https://www.dialog.lk">Dialog Axiata PLC.</a> All Rights Reserved.
+      <p>ONECRM ORDER MANAGEMENT - {{appVersion}}</p>
+    </div>
+  </div>
+</div>

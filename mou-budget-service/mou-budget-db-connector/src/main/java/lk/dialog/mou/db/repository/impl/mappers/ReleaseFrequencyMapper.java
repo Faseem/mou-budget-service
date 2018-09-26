@@ -15,8 +15,8 @@ public class ReleaseFrequencyMapper implements RowMapper<ReleaseFrequency> {
     public ReleaseFrequency mapRow(ResultSet resultSet, int i) throws SQLException {
         ReleaseFrequency releaseFrequency = new ReleaseFrequency();
         releaseFrequency.setFrequencyTypeId(resultSet.getLong("RELEASE_FREQUENCY_ID"));
-        releaseFrequency.setFrequencyName(resultSet.getString("FREQUENCY_NAME"));
-        releaseFrequency.setDescription(resultSet.getString("DESCRIPTION"));
+        releaseFrequency.setFrequencyCode(resultSet.getString("FREQUENCY_CODE"));
+        //releaseFrequency.setDescription(resultSet.getString("DESCRIPTION"));
         return releaseFrequency;
     }
 }

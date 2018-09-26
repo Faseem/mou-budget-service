@@ -8,6 +8,5 @@ import lombok.Data;
 @Data
 public class ReleaseFrequency {
     private Long frequencyTypeId;
-    private String frequencyName;
-    private String description;
+    private String frequencyCode;
 }

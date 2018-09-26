@@ -37,6 +37,7 @@ public class CustomerController {
             User sysUser = userService.getUserByUserName(user);
             if(sysUser != null){
                 customer.setCreatedSysUser(sysUser.getUserId());
+                customer.setCreatedUser(sysUser.getUserName());
             }else{
                 User userAdded = userService.addUser(new User(user));
                 customer.setCreatedSysUser(userAdded.getUserId());

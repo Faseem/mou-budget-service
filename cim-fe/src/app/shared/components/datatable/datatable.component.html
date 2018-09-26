@@ -1,0 +1,32 @@
+
+<p-dataTable [value]="data" [rows]="10" [paginator]="showPaginator" [lazy]="true" [sortField]="defaultSortField" sortOrder="1" [pageLinks]="3" [totalRecords]="totalRecords"
+             (onLazyLoad)="onLoadDataTableLazy($event)" emptyMessage="No data to display." [rowsPerPageOptions]="[10,20,30,50]"
+             sortMode="single" (onRowClick)="onRowClick($event)" #dt>
+  <p-footer style="font-size: 12px;" *ngIf="showPaginator && totalRecords > 0">Showing {{start}} to {{end}} of {{totalRecords}}</p-footer>
+  <p-column [sortable]="col.sortable" *ngFor="let col of cols" [field]="col.field" [header]="col.header" [styleClass]="col.style">
+    <ng-template *ngIf="col.type === columnType.String || col.type === undefined" let-col let-data="rowData" pTemplate type="body">
+      <span class="col-string">{{ data[ col.field ] }}</span>
+    </ng-template>
+    <ng-template let-data="rowData" pTemplate="body" *ngIf="col.type === columnType.Boolean">
+      <div *ngIf="data[col.property]">
+        <div><i class="fa fa-check-square-o" aria-hidden="true"></i></div>
+      </div>
+      <div *ngIf="!data[col.property]">
+        <div><i class="fa fa-square-o" aria-hidden="true"></i></div>
+      </div>
+    </ng-template>
+    <ng-template let-data="rowData" pTemplate="body" *ngIf="col.type === columnType.Hyperlink">
+      <a routerLink={{data[col.property]}}>{{ data[ col.field ] }}</a>
+    </ng-template>
+    <ng-template let-data="rowData" pTemplate="body" *ngIf="col.type === columnType.Button">
+      <div *ngIf="data[col.property] || col.property == ' '">
+        <button type="button" (click)="onButtonClick(action.name, data)" title={{action.name}} *ngFor="let action of col.activeActions"><i class={{action.icon}} aria-hidden="true"></i></button>
+        <div style="width:20px"></div>
+      </div>
+      <div *ngIf="!data[col.property]">
+        <button type="button" (click)="onButtonClick(action.name, data)" title={{action.name}} *ngFor="let action of col.inactiveActions"><i class={{action.icon}} aria-hidden="true"></i></button>
+        <div style="width:20px"></div>
+      </div>
+    </ng-template>
+  </p-column>
+</p-dataTable>

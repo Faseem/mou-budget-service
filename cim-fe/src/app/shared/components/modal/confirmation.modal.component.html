@@ -1,0 +1,18 @@
+<modal #confirmationmodal [title]="title+' ? '" [size]="'modal-sm'" [customWidth]="'40%'">
+  <div class="modal-body" style="padding: 10px;">
+    <div class="card-block" style="padding: 10px;">
+      <div class="row">
+        <div class="col-md-2">
+         <i class="fa fa-warning warning-icon-custom"></i>
+        </div>
+        <div class="col-md-10">
+          <p class="warining-text">{{text}} ?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer" style="padding: 10px;">
+    <button type="button" class="btn btn-success" (click)="onCompleteClick()" data-toggle="tooltip" data-placement="top" title="Yes">Yes</button>
+    <button type="button" class="btn btn-danger" (click)="closeModal()" data-toggle="tooltip" data-placement="top" title="No">No</button>
+  </div>
+</modal>

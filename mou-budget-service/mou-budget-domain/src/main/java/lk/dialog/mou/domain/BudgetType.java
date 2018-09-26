@@ -8,6 +8,5 @@ import lombok.Data;
 @Data
 public class BudgetType {
     private Long budgetTypeId;
-    private String budgetName;
-    private String description;
+    private String budgetCode;
 }

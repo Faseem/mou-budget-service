@@ -1,0 +1,20 @@
+/* The side navigation menu */
+sidenav-datatable .sidenav {
+  z-index: 1; /* Stay on top */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: .5s ease-in-out; /* 0.5 second transition effect to slide in the sidenav */
+  -webkit-transition: .5s ease-in-out;
+}
+
+sidenav-datatable .table {
+  transition: .5s ease-in-out; /* 0.5 second transition effect to slide in the sidenav */
+  -webkit-transition: .5s ease-in-out;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  sidenav-datatable .sidenav {padding-top: 15px;}
+  sidenav-datatable .sidenav a {font-size: 18px;}
+}

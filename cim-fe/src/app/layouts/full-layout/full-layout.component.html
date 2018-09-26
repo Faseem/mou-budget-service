@@ -1,0 +1,73 @@
+<!--<header class="app-header navbar">-->
+<!--<button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button" appMobileSidebarToggler>&#9776;</button>-->
+<!--<a class="navbar-brand" href="#"></a>-->
+
+<!--<ul class="nav navbar-nav mr-auto d-md-down-none">-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link navbar-toggler sidebar-toggler" href="#" appSidebarToggler>&#9776;</a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--<ul class="nav navbar-nav ml-auto">-->
+<!--<li class="nav-item d-md-down-none">-->
+<!--<div id="time" class="float-right  time_style_override"></div>-->
+<!--</li>-->
+<!--<li class="nav-item dropdown" dropdown (onToggle)="toggled($event)" id="log-out-dropdown">-->
+<!--<a href class="nav-link dropdown-toggle" dropdownToggle (click)="false">-->
+<!--<img src="assets/img/user.png" class="img-avatar" alt="admin@bootstrapmaster.com">-->
+<!--<span class="d-md-down-none">admin</span>-->
+<!--</a>-->
+<!--<div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">-->
+<!--<div class="divider"></div>-->
+<!--<a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock account</a>-->
+<!--<a class="dropdown-item" (click)="logout()"><i class="fa fa-lock"></i> Logout</a>-->
+<!--</div>-->
+<!--</li>-->
+<!--</ul>-->
+
+<!--</header>-->
+<growl [msg]="growlMsg"></growl>
+<div class="loading-layer-custom" id="loading-layer-custom">
+  <div class="vcenter">
+    <i class="fa fa-spinner fa-pulse fa-fw" style="font-size: 70px;color: #c4e1f9;"></i>
+    <br>
+    <h2 style="color: #c4e1f9;margin-top: 16px;">Please Wait ...</h2>
+  </div>
+</div>
+
+<div class='top-right notifications'></div>
+<div class="app-body">
+  <side-bar></side-bar>
+  <!-- Main content -->
+  <main class="main main-custome-bg">
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+      <button class="navbar-toggler mobile-sidebar-toggler d-lg-none menu-custom-button" type="button" appMobileSidebarToggler
+        appSidebarToggler style="display: block !important;">&#9776;</button>
+      <app-breadcrumbs></app-breadcrumbs>
+  <li style="float: right;">
+    <img *ngIf="image == 'undefined'" src="assets/img/user.png" class="img-avatar" style="height: 28px;border-radius: 3px;">
+    <img *ngIf="image != 'undefined'" style="height: 28px;border-radius: 3px;" class="img-avatar" src="data:image/png;base64,{{image}}">
+    <label>
+      <span style="font-weight: bold;text-transform: uppercase; color: #0f79b3;">{{userName}}</span> |
+      <span style="font-weight: bold;color: #3856af;">{{role}}</span>
+      &ensp;<a (click)="logout()" style="color: #a90000;font-weight: bold;cursor: pointer;">
+          <i class="fa fa-sign-out"></i>&ensp;Logout</a>
+    </label>
+  </li>
+      <!-- <li class="breadcrumb-item custom-logout custom-tooltip" (click)="logout()" data-toggle="tooltip" data-placement="left" title="system logout">
+        
+      </li> -->
+    </ol>
+    <div class="container-fluid">
+      <router-outlet>
+      </router-outlet>
+    </div>
+    <!-- /.conainer-fluid -->
+  </main>
+</div>
+
+<footer class="app-footer">
+  &copy;
+  <a href="https://www.dialog.lk">Dialog Axiata PLC.</a> All Rights Reserved.
+  <span class="footer_theme_version">Flexi version {{appVersion}}</span>
+</footer>

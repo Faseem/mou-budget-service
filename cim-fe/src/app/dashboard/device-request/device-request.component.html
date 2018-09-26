@@ -1,0 +1,91 @@
+<div class="card" style="background: rgba(255, 255, 255, 0.50);" *ngIf="!isProductDetailEnabled">
+  <div class="card-header">
+    <strong>Device Request</strong>
+  </div>
+  <div class="card-block" style="padding-left: 25px;padding-right: 25px;;">
+     <form novalidate [formGroup]="brForm" (ngSubmit)="onBrNumberSubmit()"> 
+      <div class="row search-text-row-custom">
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>BR Number
+              <span style="color: red">*</span>
+            </label>
+            <input type="text" class="form-control" placeholder="BR Number" formControlName="brNumber">
+            <div *ngIf="(brForm.controls['brNumber'].dirty || brForm.controls['brNumber'].touched)"
+              class="notification-validation-error-label">
+              <div [hidden]="!brForm.get('brNumber').hasError('required')">
+                BR Number is required
+              </div>
+              <div [hidden]="!brForm.get('brNumber').hasError('pattern')">
+                Invalid ID Number
+              </div>
+              <div [hidden]="!brForm.get('brNumber').hasError('maxlength')">
+                ID Number length should be 10 or 12
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group search_button">
+            <button class="btn btn-warning search-btn" style="width:100%;">
+              <i class="fa fa-search"></i>&ensp;Search
+            </button>
+          </div>
+        </div>
+      </div>
+     </form> 
+  </div>
+</div>
+
+<div class="card" style="background: rgba(255, 255, 255, 0.50);" *ngIf="!pRNumberDetailsList.length == 0">
+  <div class="card-header">
+    <strong>CX Data</strong>
+  </div>
+  <div class="card-block" style="padding-left: 25px;padding-right: 25px;;">
+     <div class="table-responsive">
+          <table class="table table-bordered table-striped table-sm scrolable-table">
+            <thead>
+              <tr>
+                <th style="width: 5%"></th>
+                <th style="width: 10%">Action</th>
+                <th style="width: 10%">PR</th>
+                <th style="width: 15%">Name</th>
+                <th style="width: 10%">PD GSM COUNT</th>
+                <th style="width: 10%">GSM COUNT</th>
+                <th style="width: 10%">INITIAL ACTIVE DATE</th>
+                <th style="width: 10%">OUT STANDING</th>
+                <th style="width: 10%">PD STANDING</th>
+                <th style="width: 10%">SEGMENT</th>
+              </tr>
+            </thead>
+            <tbody style="max-height: 21.8em;" id="pRNumberDetailsListTablebody"
+              (keydown)="onPrNumberDetailListKeydown($event)">
+              <tr *ngFor="let prNumberDetail of pRNumberDetailsList; let i = index;" [ngClass]="{'table-tr-custom-selected': isPrNumberDetailSelected(prNumberDetail)}"
+              (click)="onPrNumberDetailClicked(prNumberDetail, i);">
+                <td style="width: 5%">
+                  <button class="btn btn-warning btn-xs" type="button" style="cursor: pointer" data-toggle="tooltip" data-placement="top" title="Select">
+                    <i class="fa fa-hand-o-up"></i>
+                </button>
+                </td>
+                <td style="width: 10%;text-align: left">{{prNumberDetail.productType}}</td>
+                <td style="width: 10%">{{prNumberDetail.prNumber}}</td>
+                <td style="width: 15%">{{prNumberDetail.prNumber}}</td>
+                <td style="width: 10%">{{prNumberDetail.prNumber}}</td>
+                <td style="width: 10%">{{prNumberDetail.prNumber}}</td>
+                <td style="width: 10%">{{prNumberDetail.prNumber}}</td>
+                <td style="width: 10%">{{prNumberDetail.prNumber}}</td>
+                <td style="width: 10%">{{prNumberDetail.prNumber}}</td>
+                <td style="width: 10%">{{prNumberDetail.prNumber}}</td>
+                <!-- <td style="width: 15%">{{prNumberDetail.prNumberListDetail.bill_cycle}}</td>
+                <td style="width: 15%">{{prNumberDetail.prNumberListDetail.main_pkg_id}}</td>
+                <td style="width: 15%">{{prNumberDetail.prNumberListDetail.contract_id}}</td>
+                <td style="width: 15%">{{prNumberDetail.prNumberListDetail.account_status}}</td>
+                <td style="width: 15%">{{prNumberDetail.prNumberListDetail.account_no}}</td> -->
+              </tr>
+
+            </tbody>
+          </table>
+     </div>
+
+  </div>
+</div>

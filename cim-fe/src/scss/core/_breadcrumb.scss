@@ -1,0 +1,9 @@
+.breadcrumb {
+  position: unset;
+  margin-bottom: 0.5 * $spacer;
+  margin-top: 0px;
+  font-size: 11px;
+
+
+  @include borders($breadcrumb-borders);
+}

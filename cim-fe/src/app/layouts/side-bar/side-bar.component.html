@@ -1,0 +1,260 @@
+<div class="loading-layer-custom" id="loading-layer-custom">
+  <div class="vcenter">
+    <i class="fa fa-spinner fa-pulse fa-fw" style="font-size: 70px;color: #c4e1f9;"></i><br>
+    <h2 style="color: #c4e1f9;margin-top: 16px;">Please Wait ...</h2>
+  </div>
+</div>
+<div class="sidebar">
+  <img class="custom-logo" src="assets/img/logo.png" alt="logo1" />
+  <nav class="sidebar-nav">
+    <ul class="nav">
+      <li class="nav-title">
+        <div class="login-details-div">
+          <div class="details-row">
+            <div class="title title-custom">User</div>
+            <small class="small-custom">{{currentUserDetails?.loginUserName}}</small>
+          </div>
+          <div class="details-row">
+            <div class="title title-custom">PMS Location</div>
+            <small class="small-custom">{{currentUserDetails?.pmsLocationId}}</small>
+          </div>
+          <div class="details-row">
+            <div class="title title-custom">Outlet Type</div>
+            <small class="small-custom">{{currentUserDetails?.outletType}}</small>
+          </div>
+          <div class="details-row">
+            <div class="title title-custom">Agent Code</div>
+            <small class="small-custom">{{currentUserDetails?.agentCode}}</small>
+          </div>
+          <div class="details-row">
+            <div class="title title-custom">Outlet</div>
+            <small class="small-custom">{{currentUserDetails?.outletCode}}</small>
+          </div>
+          <div class="details-row">
+            <div class="title title-custom">PMS Login ID</div>
+            <small class="small-custom">{{currentUserDetails?.pmsProfileId}}</small>
+          </div>
+          <div class="details-row">
+            <div class="title title-custom">Outlet Name</div>
+            <small class="small-custom">{{currentUserDetails?.outletName}}</small>
+          </div>
+          <div class="details-row">
+            <div class="title title-custom">Sales Person</div>
+            <small class="small-custom" *ngIf="selectedSalePerson">
+              {{selectedSalePerson.loginUserName}}
+              <i class="fa fa-close sales-agent-close" (click)="removeSalesPerson()"></i>
+            </small>
+            <br *ngIf="selectedSalePerson">
+            <!-- <button class="btn btn-success agent-select" data-toggle="modal" href="#salesPersonsModal" >Filter Sales Person
+            </button> -->
+            <button class="btn btn-success agent-select" data-toggle="tooltip" data-placement="bottom" title="Change sales person" (click)="onFilterSalesPersonClick()">Sales Person
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="nav-title">
+        Request Management
+      </li>
+      <li class="nav-item nav-dropdown open" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i
+          class="icon-basket side-menu-icon-custom"></i>New Request</a>
+        <ul class="nav-dropdown-items">
+          <li *ngIf="menuPermissionModel.newOrder" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/dashboard/devicerequest']" [queryParams]="{}" (click)="showLoading();">
+              <i class="icon-plus"></i>Device Request</a>
+          </li>
+          <li *ngIf="menuPermissionModel.viewOrderDetails" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/dashboard/callcredits']">
+              <i class="icon-pencil"></i>Call Credits</a>
+          </li>
+          <li *ngIf="menuPermissionModel.ReturnReplacement" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/dashboard/directddf']">
+              <i class="icon-action-redo"></i>Direct DDF</a>
+          </li>
+          <li *ngIf="menuPermissionModel.ReturnReplacement" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/dashboard/fixed']">
+              <i class="icon-action-redo"></i>Fixed</a>
+          </li>
+          <li *ngIf="menuPermissionModel.ReturnReplacement" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/dashboard/memorequest']">
+              <i class="icon-action-redo"></i>Memo Request</a>
+          </li>
+          <li *ngIf="menuPermissionModel.ReturnReplacement" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/dashboard/newsolutionreq']">
+              <i class="icon-action-redo"></i>New Solution Request</a>
+          </li>
+
+          <!-- <li *ngIf="menuPermissionModel.pinAuthLogs" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" (click)="openPinAuthLogs();" style="cursor: pointer">
+              <i class="icon-key"></i>PIN Auth Logs</a>
+          </li>
+          <li *ngIf="menuPermissionModel.assets" class="nav-item" style="cursor: pointer">&ensp;
+            <a class="nav-link search-sidebar-custom" (click)="openViewAssets();">
+              <i class="icon-book-open"></i>Assets</a>
+          </li> -->
+        </ul>
+      </li>
+      <!--<li class="nav-title">-->
+        <!--Assets Management-->
+      <!--</li>-->
+      <!-- <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i
+          class="icon-social-dropbox side-menu-icon-custom"></i>Assets</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/user-role/user-role-permissions-view2']">
+              <i class="icon-book-open"></i>View Assets</a>
+          </li>
+        </ul>
+      </li> -->
+
+      <li class="nav-item nav-dropdown open" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i
+          class="icon-basket side-menu-icon-custom"></i>Request Status</a>
+        <ul class="nav-dropdown-items">
+          <li *ngIf="menuPermissionModel.newOrder" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/dashboard/completedreq']" [queryParams]="{}" (click)="showLoading();">
+              <i class="icon-plus"></i>Completed Request</a>
+          </li>
+          <li *ngIf="menuPermissionModel.newOrder" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/dashboard/approvalreq']" [queryParams]="{}" (click)="showLoading();">
+              <i class="icon-plus"></i>Approval Request</a>
+          </li>
+          <li *ngIf="menuPermissionModel.newOrder" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/dashboard/pendingreq']" [queryParams]="{}" (click)="showLoading();">
+              <i class="icon-plus"></i>Pending Request</a>
+          </li>
+          <li *ngIf="menuPermissionModel.newOrder" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/dashboard/rejectedreq']" [queryParams]="{}" (click)="showLoading();">
+              <i class="icon-plus"></i>Rijedted Request</a>
+          </li>
+          <li *ngIf="menuPermissionModel.newOrder" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/dashboard/canceledreq']" [queryParams]="{}" (click)="showLoading();">
+              <i class="icon-plus"></i>Canceled Request</a>
+          </li>
+          <li *ngIf="menuPermissionModel.newOrder" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/dashboard/pendingdirectddf']" [queryParams]="{}" (click)="showLoading();">
+              <i class="icon-plus"></i>Pending Direct DDF</a>
+          </li>
+          <li *ngIf="menuPermissionModel.newOrder" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/dashboard/completeddirectddf']" [queryParams]="{}" (click)="showLoading();">
+              <i class="icon-plus"></i>Completed Direct DDF</a>
+          </li>
+          <li *ngIf="menuPermissionModel.newOrder" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/dashboard/rejecteddirectddf']" [queryParams]="{}" (click)="showLoading();">
+              <i class="icon-plus"></i>Rejected Direct DDF</a>
+          </li>
+
+          <!-- <li *ngIf="menuPermissionModel.pinAuthLogs" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" (click)="openPinAuthLogs();" style="cursor: pointer">
+              <i class="icon-key"></i>PIN Auth Logs</a>
+          </li>
+          <li *ngIf="menuPermissionModel.assets" class="nav-item" style="cursor: pointer">&ensp;
+            <a class="nav-link search-sidebar-custom" (click)="openViewAssets();">
+              <i class="icon-book-open"></i>Assets</a>
+          </li> -->
+        </ul>
+      </li>
+
+
+
+      <li class="nav-title">
+        Approval Management
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i
+          class="icon-screen-smartphone side-menu-icon-custom"></i>Approval</a>
+        <ul class="nav-dropdown-items">
+          <li *ngIf="menuPermissionModel.mouCustomer" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+               [routerLink]="['/dashboard/approval']">
+              <i class="icon-people"></i>Approval</a>
+          </li>
+          <!-- <li *ngIf="menuPermissionModel.mouAgreement" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+               [routerLink]="['/mou/agreement']">
+              <i class="icon-note"></i>Agreement</a>
+          </li>
+          <li *ngIf="menuPermissionModel.mouBudget" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+               [routerLink]="['/mou/budget']">
+              <i class="icon-wallet"></i>Budget</a>
+          </li>
+          <li *ngIf="menuPermissionModel.mouDetails" class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+               [routerLink]="['/mou/view-details']">
+              <i class="icon-book-open"></i>View Details</a>
+          </li> -->
+        </ul>
+      </li>
+      <!-- <li class="nav-title">
+        Configurations
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i
+          class="icon-settings side-menu-icon-custom"></i>Configurations</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active"
+            [routerLink]="['/configurations/configure-branch']">
+            <i class="icon-people"></i>Configure Branch</a>
+          </li>
+          <li class="nav-item">&ensp;-->
+            <!--<a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/user-role/user-role-permissions-view2']">-->
+              <!--<i class="icon-key"></i>Password Change</a>-->
+          <!--</li>
+        </ul>
+      </li> -->
+
+      <!--This section is added for test purpose only-->
+      <!-- <li class="nav-title">
+        Static Configs - (Mock purpose)
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i
+          class="icon-screen-smartphone side-menu-icon-custom"></i>Pages</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/order/config/cdma-connection']">
+              <i class="icon-people"></i>CDMA new connection</a>
+          </li>
+          <li class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/order/config/cdma-data-connection']">
+              <i class="icon-people"></i>CDMA Data Connection</a>
+          </li>
+            <li class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/order/config/cdma-voice-connection']">
+              <i class="icon-people"></i>CDMA Voice Connection</a>
+          </li>
+          <li class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/order/config/dtv-prepaid-connection']">
+              <i class="icon-people"></i>DTV - PREPAID</a>
+          </li>
+          <li class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/order/config/dtv-postpaid-connection']">
+              <i class="icon-people"></i>DTV - POSTPAID</a>
+          </li>
+          <li class="nav-item">&ensp;
+            <a class="nav-link search-sidebar-custom" routerLinkActive="active" [routerLink]="['/order/config/gsm-connection']">
+              <i class="icon-people"></i>GSM Connection</a>
+          </li>
+        </ul>
+      </li> -->
+
+    </ul>
+  </nav>
+</div>
+
+<!-- <sales-person-modal (salesPersonChangeEvent)="salesPersonChanged($event)"></sales-person-modal>
+<pin-auth-log-modal></pin-auth-log-modal>
+<view-assets-modal></view-assets-modal> -->
+<!--   Modal -->

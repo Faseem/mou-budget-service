@@ -1,0 +1,16 @@
+<div class="row">
+  <div #table class="table col-12">
+    <data-table [data]="data" [defaultSortField]="defaultSortField" (loadDataTableLazy)="onLoadDataTableLazy($event)"
+                [cols]="cols" [totalRecords]="totalRecords" (buttonClick)="onButtonClick($event)"
+                (rowClick)="onRowClick($event)" [showPaginator]="showPaginator"></data-table>
+  </div>
+  <div #sideNav class="sidenav card" style="display: none;">
+    <div class="col-12">
+      <a href="javascript:void(0)" class="pull-right closebtn" (click)="closeNav()">&times;</a>
+    </div>
+    <br>
+    <div class="col-12">
+      <ng-content select="[side]"></ng-content>
+    </div>
+  </div>
+</div>

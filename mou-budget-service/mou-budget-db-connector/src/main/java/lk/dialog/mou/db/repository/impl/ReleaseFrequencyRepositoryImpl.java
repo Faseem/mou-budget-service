@@ -42,8 +42,8 @@ public class ReleaseFrequencyRepositoryImpl implements ReleaseFrequencyRepositor
         namedParameterJdbcTemplate.query(query, params,new ReleaseFrequencyMapper());
         List<ReleaseFrequency> releaseFrequencyList = namedParameterJdbcTemplate.query(query, params, (rs, i) -> {
             ReleaseFrequency releaseFrequencyReturned = new ReleaseFrequency();
-            releaseFrequencyReturned.setFrequencyName(rs.getString("FREQUENCY_NAME"));
-            releaseFrequencyReturned.setDescription(rs.getString("DESCRIPTION"));
+            releaseFrequencyReturned.setFrequencyCode(rs.getString("FREQUENCY_CODE"));
+            //releaseFrequencyReturned.setDescription(rs.getString("DESCRIPTION"));
             releaseFrequencyReturned.setFrequencyTypeId(rs.getLong("RELEASE_FREQUENCY_ID"));
             return releaseFrequencyReturned;
         });
@@ -52,16 +52,16 @@ public class ReleaseFrequencyRepositoryImpl implements ReleaseFrequencyRepositor
 
     @Override
     public ReleaseFrequency getReleaseFrequencyByKeys(ReleaseFrequency releaseFrequency) {
-        String query = "SELECT * FROM MOU.RELEASE_FREQUENCY WHERE FREQUENCY_NAME=:FREQUENCY_NAME AND DESCRIPTION=:DESCRIPTION";
+        String query = "SELECT * FROM MOU.RELEASE_FREQUENCY WHERE FREQUENCY_CODE=:FREQUENCY_CODE";
         Map<String, Object> params = new HashMap<>();
-        params.put("FREQUENCY_NAME", releaseFrequency.getFrequencyName());
-        params.put("DESCRIPTION", releaseFrequency.getDescription());
+        params.put("FREQUENCY_CODE", releaseFrequency.getFrequencyCode());
+        //params.put("DESCRIPTION", releaseFrequency.getDescription());
 
         namedParameterJdbcTemplate.query(query, params,new ReleaseFrequencyMapper());
         List<ReleaseFrequency> releaseFrequencyList = namedParameterJdbcTemplate.query(query, params, (rs, i) -> {
             ReleaseFrequency releaseFrequencyReturned = new ReleaseFrequency();
-            releaseFrequencyReturned.setFrequencyName(rs.getString("FREQUENCY_NAME"));
-            releaseFrequencyReturned.setDescription(rs.getString("DESCRIPTION"));
+            releaseFrequencyReturned.setFrequencyCode(rs.getString("FREQUENCY_CODE"));
+            //releaseFrequencyReturned.setDescription(rs.getString("DESCRIPTION"));
             releaseFrequencyReturned.setFrequencyTypeId(rs.getLong("RELEASE_FREQUENCY_ID"));
             return releaseFrequencyReturned;
         });
@@ -71,13 +71,12 @@ public class ReleaseFrequencyRepositoryImpl implements ReleaseFrequencyRepositor
     @Override
     public ReleaseFrequency addReleaseFrequency(ReleaseFrequency releaseFrequency) {
         Map<String,Object> parameters = new HashMap<>();
-        parameters.put("FREQUENCY_NAME", releaseFrequency.getFrequencyName());
-        parameters.put("DESCRIPTION", releaseFrequency.getDescription());
+        parameters.put("FREQUENCY_CODE", releaseFrequency.getFrequencyCode());
+        //parameters.put("DESCRIPTION", releaseFrequency.getDescription());
 
         namedParameterJdbcTemplate.update("INSERT INTO MOU.RELEASE_FREQUENCY (" +
-                        "FREQUENCY_NAME," +
-                        "DESCRIPTION)" +
-                        " VALUES(:FREQUENCY_NAME, :DESCRIPTION)",
+                        "FREQUENCY_CODE )" +
+                        " VALUES(:FREQUENCY_CODE)",
                 parameters);
 
         return getReleaseFrequencyByKeys(releaseFrequency);

@@ -1,0 +1,7 @@
+{
+  "realm": "onecrm",
+  "auth-server-url": "http://onecrm/auth",
+  "ssl-required": "external",
+  "resource": "hotline",
+  "public-client": true
+}

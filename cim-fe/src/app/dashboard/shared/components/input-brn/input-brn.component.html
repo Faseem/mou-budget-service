@@ -1,0 +1,53 @@
+<div class="card" style="background: rgba(255, 255, 255, 0.50);" *ngIf="!isProductDetailEnabled">
+  <div class="card-header">
+    <strong>{{requestPage}}</strong>
+  </div>
+  <div class="card-block" style="padding-left: 25px;padding-right: 25px;;">
+     <form novalidate [formGroup]="brForm" (ngSubmit)="onBrNumberSubmit()"> 
+      <div class="row search-text-row-custom">
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Search Type
+              <span style="color: red">*</span>
+            </label>
+            <select class="form-control form-control-sm" placeholder="" formControlName="searchType">
+              <option [value]="type.name" *ngFor="let type of searchTypes">{{type.name}}</option>
+            </select>
+            <div *ngIf="(brForm.controls['searchType'].dirty || brForm.controls['searchType'].touched)" class="notification-validation-error-label">
+              <div [hidden]="!brForm.get('searchType').hasError('required')">
+                ID Type is required
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>BR Number
+              <span style="color: red">*</span>
+            </label>
+            <input type="text" class="form-control" placeholder="BR Number" formControlName="brNumber">
+            <div *ngIf="(brForm.controls['brNumber'].dirty || brForm.controls['brNumber'].touched)"
+              class="notification-validation-error-label">
+              <div [hidden]="!brForm.get('brNumber').hasError('required')">
+                BR Number is required
+              </div>
+              <div [hidden]="!brForm.get('brNumber').hasError('pattern')">
+                Invalid ID Number
+              </div>
+              <div [hidden]="!brForm.get('brNumber').hasError('maxlength')">
+                ID Number length should be 10 or 12
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group search_button">
+            <button class="btn btn-warning search-btn" style="width:100%;" [disabled] = "!brForm.valid">
+              <i class="fa fa-search"></i>&ensp;Search
+            </button>
+          </div>
+        </div>
+      </div>
+     </form> 
+  </div>
+</div>

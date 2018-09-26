@@ -40,8 +40,8 @@ public class BudgetTypeRepositoryImpl implements BudgetTypeRepository {
         namedParameterJdbcTemplate.query(query, params,new BudgetTypeMapper());
         List<BudgetType> budgetTypeList = namedParameterJdbcTemplate.query(query, params, (rs, i) -> {
             BudgetType budgetTypeReturned = new BudgetType();
-            budgetTypeReturned.setBudgetName(rs.getString("BUDGET_NAME"));
-            budgetTypeReturned.setDescription(rs.getString("DESCRIPTION"));
+            budgetTypeReturned.setBudgetCode(rs.getString("BUDGET_CODE"));
+            //budgetTypeReturned.setDescription(rs.getString("DESCRIPTION"));
             budgetTypeReturned.setBudgetTypeId(rs.getLong("BUDGET_TYPE_ID"));
             return budgetTypeReturned;
         });
@@ -50,16 +50,16 @@ public class BudgetTypeRepositoryImpl implements BudgetTypeRepository {
 
     @Override
     public BudgetType getBudgetTypeByKeys(BudgetType budgetType) {
-        String query = "SELECT * FROM MOU.BUDGET_TYPE WHERE BUDGET_NAME=:BUDGET_NAME AND DESCRIPTION=:DESCRIPTION";
+        String query = "SELECT * FROM MOU.BUDGET_TYPE WHERE BUDGET_CODE=:BUDGET_CODE";
         Map<String, Object> params = new HashMap<>();
-        params.put("BUDGET_NAME", budgetType.getBudgetName());
-        params.put("DESCRIPTION", budgetType.getDescription());
+        params.put("BUDGET_CODE", budgetType.getBudgetCode());
+        //params.put("DESCRIPTION", budgetType.getDescription());
 
         namedParameterJdbcTemplate.query(query, params,new BudgetTypeMapper());
         List<BudgetType> budgetTypeList = namedParameterJdbcTemplate.query(query, params, (rs, i) -> {
             BudgetType budgetTypeReturned = new BudgetType();
-            budgetTypeReturned.setBudgetName(rs.getString("BUDGET_NAME"));
-            budgetTypeReturned.setDescription(rs.getString("DESCRIPTION"));
+            budgetTypeReturned.setBudgetCode(rs.getString("BUDGET_CODE"));
+            //budgetTypeReturned.setDescription(rs.getString("DESCRIPTION"));
             budgetTypeReturned.setBudgetTypeId(rs.getLong("BUDGET_TYPE_ID"));
             return budgetTypeReturned;
         });
@@ -69,13 +69,12 @@ public class BudgetTypeRepositoryImpl implements BudgetTypeRepository {
     @Override
     public BudgetType addBudgetType(BudgetType budgetType) {
         Map<String,Object> parameters = new HashMap<>();
-        parameters.put("BUDGET_NAME", budgetType.getBudgetName());
-        parameters.put("DESCRIPTION", budgetType.getDescription());
+        parameters.put("BUDGET_CODE", budgetType.getBudgetCode());
+        //parameters.put("DESCRIPTION", budgetType.getDescription());
 
         namedParameterJdbcTemplate.update("INSERT INTO MOU.BUDGET_TYPE (" +
-                        "BUDGET_NAME," +
-                        "DESCRIPTION)" +
-                        " VALUES(:BUDGET_NAME, :DESCRIPTION)",
+                        "BUDGET_CODE)" +
+                        " VALUES(:BUDGET_CODE)",
                 parameters);
 
         return getBudgetTypeByKeys(budgetType);
