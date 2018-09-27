@@ -83,6 +83,21 @@ public class MOUAgreementBudgetTypeController {
         return ResponseBuilder.build(ResponseBuilder.success(mouAgreementBudgetTypesSaved));
     }
 
+    @EnableAudit(description = "getBudgetsForMOUAgreement")
+    @PostMapping(value = "/getBudgetsForMOUAgreement")
+    ResponseEntity<APIResponse> getBudgetsForMOUAgreementByMouAgreement(@RequestBody MOUAgreement mouAgreement,
+                                                            @RequestHeader(value = "user") String user) {
+        List<MOUAgreementBudgetType> mouAgreementBudgetTypesSaved = new ArrayList<>();
+        mouAgreementBudgetTypesSaved =  mouAgreementBudgetTypeService.getMOUAgreementBudgetTypeByAgreementId(mouAgreement.getAgreementKey());
+        if(null != mouAgreementBudgetTypesSaved && mouAgreementBudgetTypesSaved.size()>0){
+            for(MOUAgreementBudgetType mouAgreementBudgetType : mouAgreementBudgetTypesSaved){
+                List<Budget> budgetList = (List<Budget>) budgetController.getBudgetsForMouAgreementBudgetType(mouAgreementBudgetType, user).getBody().getData();
+                mouAgreementBudgetType.setBudgetList(budgetList);
+            }
+        }
+        return ResponseBuilder.build(ResponseBuilder.success(mouAgreementBudgetTypesSaved));
+    }
+
     private List<Budget> saveBudgetsToTheMOUAgreementBudgetType(MOUAgreementBudgetType mouAgreementBudgetTypeSaved, String user) {
         List<Budget> budgetList = getBudgetList(mouAgreementBudgetTypeSaved);
         List<Budget> budgetListSaved = (List<Budget>) budgetController.saveBudgetType(budgetList, user).getBody().getData();
@@ -95,8 +110,8 @@ public class MOUAgreementBudgetTypeController {
         Date endDate = mouAgreement.getEndDate();
         Date startDate = mouAgreement.getStartDate();
         Double totalAmount = mouAgreement.getAmount();
-        String frequency = mouAgreementBudgetType.getReleaseFrequency().getFrequencyName();
-        Long cusId = mouAgreementBudgetType.getCustomerId();
+        String frequency = mouAgreementBudgetType.getReleaseFrequency().getFrequencyCode();
+        //Long cusId = mouAgreementBudgetType.getCustomerId();
         Long mouAgreementBudgetTypeId = mouAgreementBudgetType.getMouAgreementBudgetTypeId();
         Double distributedAmount = (frequency.equals("THREE_QUARTER")) ? totalAmount/3 :
                 (frequency.equals("FOUR_QUARTER")) ? totalAmount/4 :
@@ -104,7 +119,7 @@ public class MOUAgreementBudgetTypeController {
         while(endDate.compareTo(startDate) > 0){
             Budget budget = new Budget();
             budget.setStartDate(startDate);
-            budget.setMouCustomerId(cusId);
+            //budget.setMouCustomerId(cusId);
             budget.setMouAgreementBudgetTypeId(mouAgreementBudgetTypeId);
             budget.setUsageAmount(0.00);
             budget.setActive(false);

@@ -11,7 +11,7 @@ import java.util.Date;
 public class Budget {
     private Long budgetId;
     private Long mouAgreementBudgetTypeId;
-    private Long mouCustomerId;
+    //private Long mouCustomerId;
     private Double budgetAmount;
     private Date startDate;
     private String subPeriodCode;

@@ -17,4 +17,9 @@ public class CustomerMOUAgreementServiceImpl implements CustomerMOUAgreementServ
     public CustomerMOUAgreement addCustomerMOUAgreement(CustomerMOUAgreement customerMOUAgreement) {
         return customerMOUAgreementRepository.addCustomerMOUAgreement(customerMOUAgreement);
     }
+
+    @Override
+    public  CustomerMOUAgreement getCustomerMOUAgreementByKeys(CustomerMOUAgreement customerMOUAgreement){
+        return customerMOUAgreementRepository.getCustomerMOUAgreementByKeys(customerMOUAgreement);
+    }
 }

@@ -1,199 +1,74 @@
-2018-09-20 08:39:54.826  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 7624 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 08:39:54.937 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 08:39:54.938  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 08:40:06.222 ERROR  --- [main] o.s.b.d.LoggingFailureAnalysisReporter : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field budgetService in lk.dialog.mou.web.controller.BudgetController required a bean of type 'lk.dialog.mou.web.service.budget.BudgetService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'lk.dialog.mou.web.service.budget.BudgetService' in your configuration.
-
-2018-09-20 08:40:06.230 DEBUG  --- [Thread-2] l.d.m.w.MOUBudgetServiceApplication : !!!!!!!!!!! application shutdown !!!!!!!!!!!
-2018-09-20 08:40:31.824  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9828 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 08:40:31.830 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 08:40:31.831  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 08:40:43.468  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.742 seconds (JVM running for 13.76)
-2018-09-20 09:01:17.831  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10872 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 09:01:17.838 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 09:01:17.839  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 09:01:29.645  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.905 seconds (JVM running for 14.053)
-2018-09-20 09:36:57.668  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9980 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 09:36:57.679 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 09:36:57.679  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 09:37:08.287  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 11.63 seconds (JVM running for 12.618)
-2018-09-20 09:40:31.701  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 6712 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 09:40:31.707 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 09:40:31.708  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 09:40:43.337  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.033 seconds (JVM running for 14.121)
-2018-09-20 09:51:38.747  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10960 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 09:51:38.753 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 09:51:38.755  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 09:51:49.948  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.704 seconds (JVM running for 13.658)
-2018-09-20 09:53:03.153  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 6024 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 09:53:03.159 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 09:53:03.160  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 09:53:15.282  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.217 seconds (JVM running for 14.253)
-2018-09-20 09:55:02.397  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 6704 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 09:55:02.404 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 09:55:02.404  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 09:55:13.637  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.459 seconds (JVM running for 13.494)
-2018-09-20 10:17:26.300  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 4848 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:17:26.308 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:17:26.308  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:17:37.694  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.594 seconds (JVM running for 13.563)
-2018-09-20 10:22:47.420  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 168 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:22:47.426 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:22:47.427  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:23:00.458  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.145 seconds (JVM running for 15.104)
-2018-09-20 10:25:17.205  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 7608 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:25:17.212 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:25:17.212  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:25:28.522  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.306 seconds (JVM running for 13.289)
-2018-09-20 10:26:44.527  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 6568 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:26:44.533 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:26:44.534  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:26:55.552  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.326 seconds (JVM running for 13.336)
-2018-09-20 10:31:33.445  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 5196 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:31:33.478 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:31:33.479  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:31:45.837  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.395 seconds (JVM running for 14.467)
-2018-09-20 10:34:03.943  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 6520 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:34:03.949 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:34:03.949  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:34:15.498  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.634 seconds (JVM running for 13.599)
-2018-09-20 10:39:23.472  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 11188 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:39:23.479 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:39:23.479  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:39:36.224  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.003 seconds (JVM running for 14.996)
-2018-09-20 10:41:39.629  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10900 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:41:39.635 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:41:39.635  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:41:51.250  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.622 seconds (JVM running for 13.622)
-2018-09-20 10:51:03.888  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9600 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:51:03.894 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:51:03.895  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:51:15.547  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.699 seconds (JVM running for 13.784)
-2018-09-20 10:53:34.581  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 7644 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:53:34.633 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:53:34.634  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:53:45.287  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 11.914 seconds (JVM running for 12.948)
-2018-09-20 10:59:02.110  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9684 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 10:59:02.116 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 10:59:02.117  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 10:59:15.138  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.22 seconds (JVM running for 15.282)
-2018-09-20 11:00:15.869  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 11124 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:00:15.876 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:00:15.877  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:00:29.157  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.343 seconds (JVM running for 15.382)
-2018-09-20 11:06:17.905  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9656 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:06:17.912 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:06:17.913  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:06:28.391  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 11.79 seconds (JVM running for 12.828)
-2018-09-20 11:07:56.636  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 788 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:07:56.643 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:07:56.643  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:08:08.808  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.866 seconds (JVM running for 13.874)
-2018-09-20 11:20:51.916  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 3144 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:20:51.922 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:20:51.923  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:21:03.162  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.243 seconds (JVM running for 13.242)
-2018-09-20 11:23:43.109  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 4308 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:23:43.116 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:23:43.116  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:23:54.200  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.201 seconds (JVM running for 13.361)
-2018-09-20 11:34:19.135  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10912 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:34:19.141 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:34:19.142  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:34:34.150  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 17.356 seconds (JVM running for 19.033)
-2018-09-20 11:38:39.451  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10392 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:38:39.457 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:38:39.457  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:38:50.698  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.524 seconds (JVM running for 15.012)
-2018-09-20 11:40:06.116  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10692 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:40:06.122 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:40:06.122  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:40:24.055  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 19.069 seconds (JVM running for 20.641)
-2018-09-20 11:41:32.659  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10680 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:41:32.665 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:41:32.666  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:41:44.098  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.598 seconds (JVM running for 15.054)
-2018-09-20 11:47:46.892  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 8056 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:47:46.899 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:47:46.900  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:47:58.430  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.525 seconds (JVM running for 13.827)
-2018-09-20 11:50:57.587  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9696 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:50:57.593 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:50:57.593  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:51:14.827  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 18.995 seconds (JVM running for 20.854)
-2018-09-20 11:59:10.263  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 2932 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 11:59:10.272 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 11:59:10.272  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 11:59:22.745  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.201 seconds (JVM running for 14.336)
-2018-09-20 12:13:00.034  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10008 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 12:13:00.042 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 12:13:00.042  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 12:13:12.224  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.579 seconds (JVM running for 14.803)
-2018-09-20 14:01:56.029  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 5748 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 14:01:56.042 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 14:01:56.065  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 14:02:07.305  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.287 seconds (JVM running for 13.365)
-2018-09-20 14:35:00.181  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 8436 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 14:35:00.189 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 14:35:00.189  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 14:35:13.950  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.877 seconds (JVM running for 15.946)
-2018-09-20 14:40:12.294  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 3200 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 14:40:12.302 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 14:40:12.303  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 14:40:24.689  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.608 seconds (JVM running for 14.687)
-2018-09-20 15:39:29.008  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 1060 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 15:39:29.015 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 15:39:29.015  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 15:39:41.613  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 15.02 seconds (JVM running for 16.094)
-2018-09-20 15:43:43.646  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 1892 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 15:43:43.652 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 15:43:43.653  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 15:43:55.144  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.626 seconds (JVM running for 13.681)
-2018-09-20 15:55:24.198  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 3284 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 15:55:24.205 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 15:55:24.205  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 15:55:35.956  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.961 seconds (JVM running for 14.516)
-2018-09-20 16:16:38.776  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 5024 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 16:16:38.781 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 16:16:38.784  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 16:16:50.765  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.029 seconds (JVM running for 14.067)
-2018-09-20 16:24:34.344  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 5492 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 16:24:34.350 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 16:24:34.351  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 16:24:46.237  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.035 seconds (JVM running for 14.152)
-2018-09-20 16:42:04.907  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 3520 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 16:42:04.913 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 16:42:04.914  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 16:42:16.382  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.665 seconds (JVM running for 13.628)
-2018-09-20 16:48:47.225  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 8040 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 16:48:47.231 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 16:48:47.232  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 16:49:01.647  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 15.515 seconds (JVM running for 16.452)
-2018-09-20 16:59:45.603  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10596 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 16:59:45.610 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 16:59:45.610  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 16:59:56.350  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.008 seconds (JVM running for 13.098)
-2018-09-20 17:00:31.496  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 4524 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 17:00:31.503 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 17:00:31.503  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 17:00:43.159  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.667 seconds (JVM running for 14.069)
-2018-09-20 17:05:56.434  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 2632 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 17:05:56.444 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 17:05:56.445  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 17:06:07.454  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.263 seconds (JVM running for 13.293)
-2018-09-20 17:08:48.105  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 888 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
-2018-09-20 17:08:48.112 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-2018-09-20 17:08:48.113  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
-2018-09-20 17:08:59.922  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.108 seconds (JVM running for 14.179)
+2018-09-26 12:31:23.664  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 12136 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:31:23.706 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:31:23.707  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:31:42.217  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 19.817 seconds (JVM running for 22.604)
+2018-09-26 12:35:14.894  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 12056 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:35:14.900 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:35:14.901  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:35:29.529  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 15.654 seconds (JVM running for 16.856)
+2018-09-26 12:36:34.499  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10136 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:36:34.506 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:36:34.507  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:36:46.018  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.784 seconds (JVM running for 13.789)
+2018-09-26 12:39:18.904  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 7936 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:39:18.911 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:39:18.911  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:39:30.895  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.124 seconds (JVM running for 14.75)
+2018-09-26 12:42:23.064  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 11576 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:42:23.074 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:42:23.075  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:42:35.909  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.94 seconds (JVM running for 15.657)
+2018-09-26 12:43:27.105  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 11704 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:43:27.112 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:43:27.112  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:43:39.406  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.455 seconds (JVM running for 14.547)
+2018-09-26 12:53:14.617  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 8780 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:53:14.623 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:53:14.623  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:53:25.490  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.09 seconds (JVM running for 13.284)
+2018-09-26 12:54:17.308  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 5756 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:54:17.315 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:54:17.315  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:54:29.911  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.833 seconds (JVM running for 15.979)
+2018-09-26 12:55:24.892  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10404 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:55:24.900 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:55:24.902  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:55:32.088  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 7664 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:55:32.096 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:55:32.097  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:57:45.512  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 11032 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 12:57:45.517 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 12:57:45.518  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 12:57:57.502  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 13.108 seconds (JVM running for 14.143)
+2018-09-26 13:00:43.850  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 4176 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 13:00:43.857 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 13:00:43.858  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 13:00:55.289  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.452 seconds (JVM running for 13.616)
+2018-09-26 13:10:33.930  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 11364 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 13:10:33.937 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 13:10:33.938  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 13:10:45.483  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 12.679 seconds (JVM running for 13.822)
+2018-09-26 13:26:48.310  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 10296 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 13:26:48.316 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 13:26:48.317  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 13:27:01.943  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.575 seconds (JVM running for 16.601)
+2018-09-26 13:31:47.629  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 11144 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 13:31:47.635 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 13:31:47.636  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 13:32:02.787  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 16.342 seconds (JVM running for 17.777)
+2018-09-26 14:50:03.768  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 3060 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 14:50:03.775 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 14:50:03.776  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 14:50:17.023  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 14.891 seconds (JVM running for 16.054)
+2018-09-26 15:06:05.881  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 9340 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 15:06:05.888 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 15:06:05.889  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 15:06:20.248  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 15.65 seconds (JVM running for 17.113)
+2018-09-26 16:42:48.157  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 11808 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 16:42:48.164 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 16:42:48.164  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 16:43:04.555  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 17.102 seconds (JVM running for 22.746)
+2018-09-26 16:50:56.189  INFO  --- [main] o.s.b.StartupInfoLogger : Starting MOUBudgetServiceApplication on AUX19 with PID 5444 (D:\Dialog\budget-managment\mou-budget-service\mou-budget-web\target\classes started by Aux072 in D:\Dialog\budget-managment\mou-budget-service)
+2018-09-26 16:50:56.196 DEBUG  --- [main] o.s.b.StartupInfoLogger : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-09-26 16:50:56.197  INFO  --- [main] o.s.b.SpringApplication : The following profiles are active: test
+2018-09-26 16:51:10.792  INFO  --- [main] o.s.b.StartupInfoLogger : Started MOUBudgetServiceApplication in 15.258 seconds (JVM running for 19.551)

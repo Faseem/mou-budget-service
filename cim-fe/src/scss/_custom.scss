@@ -1,0 +1,127 @@
+// Here you can add other styles
+hand {
+  cursor: hand;
+}
+
+.main.container-fluid {
+    padding: 0 21px !important;
+}
+
+.search_button {
+    padding-top: 22px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.StepProgress {
+  position: relative;
+  padding-left: 47px;
+  list-style: none;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 10px;
+    height: 100%;
+    border-left: 2px solid #CCC;
+  }
+
+  &-item {
+    position: relative;
+    counter-increment: list;
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+
+    }
+
+    &::before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      left: -32px;
+      height: 100%;
+      width: 10px;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: -37px;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #CCC;
+      border-radius: 50%;
+      background-color: #FFF;
+    }
+
+    &.is-done {
+      &::before {
+        border-left: 2px solid green;
+      }
+      &::after {
+        content: "✔";
+        font-size: 10px;
+        color: #FFF;
+        width: 19px;
+        height: 18px;
+        margin-top: 5px;
+        left: -40px;
+        text-align: center;
+        border: 2px solid green;
+        background-color: green;
+      }
+    }
+
+    &.is-required {
+      &::before {
+        border-left: 2px solid green;
+      }
+      &::after {
+        content: "X";
+        font-size: 10px;
+        color: #FFF;
+        width: 19px;
+        height: 18px;
+        left: -40px;
+        text-align: center;
+        border: 2px solid red;
+        background-color: red;
+      }
+    }
+
+    &.current {
+      &::before {
+        border-left: 2px solid green;
+      }
+
+      &::after {
+        content: counter(list);
+        padding-top: 1px;
+        width: 19px;
+        height: 18px;
+        top: -4px;
+        left: -40px;
+        font-size: 14px;
+        text-align: center;
+        color: green;
+        border: 2px solid green;
+        background-color: white;
+      }
+    }
+  }
+
+  strong {
+    display: block;
+  }
+}
+

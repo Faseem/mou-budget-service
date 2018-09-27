@@ -1,0 +1,196 @@
+<input-brn
+[requestPage] = "requestPage"
+(brnChangedEmitter)="brnChanged($event)">
+</input-brn>
+
+
+<div class="card" style="background: rgba(255, 255, 255, 0.50);" *ngIf="selectedCony">
+    
+    <div class="card-header">
+        <strong>Cony Detail</strong>
+    </div>
+    
+    <div class="card-block" style="padding-left: 25px;padding-right: 25px;;">
+
+        <div class="table-responsive" *ngIf="brnDetails.length>0">
+            <table class="table table-bordered table-striped table-sm scrolable-table">
+                <thead>
+                    <tr>
+                        <th style="width: 5%"></th>
+                        <th style="width: 11%">ConyNumber</th>
+                        <th style="width: 12%">NonPayInvoiceCount</th>
+                        <th style="width: 12%">NumberOfAssociatedBrn</th>
+                        <th style="width: 12%">OutstandingBalance</th>
+                        <th style="width: 12%">PendingOutStandingBalance</th>
+                        <th style="width: 12%">TotalConnections</th>
+                        <th style="width: 12%">TotalDisconnected</th>
+                    </tr>
+                </thead>
+                <tbody style="max-height: 21.8em;" id="brnDetailsListTablebody"
+                    (keydown)="onBrnDetailListKeydown($event)">
+                    <tr *ngFor="let brnDetail of brnDetails; let i = index;" [ngClass]="{'table-tr-custom-selected': isBrnDetailSelected(brnDetail)}"
+                    (click)="onBrnDetailClicked(brnDetail, i);">
+                        <td style="width: 5%">
+                        <button class="btn btn-warning btn-xs" type="button" style="cursor: pointer" data-toggle="tooltip" data-placement="top" title="Select">
+                            <i class="fa fa-hand-o-up"></i>
+                        </button>
+                        </td>
+                        <td style="width: 11%;text-align: left">{{selectedCony.conyNo}}</td>
+                        <td style="width: 12%;text-align: left">{{selectedCony.nonPayInvoiceCount}}</td>
+                        <td style="width: 12%;text-align: left">{{selectedCony.brnDtos.length}}</td>
+                        <td style="width: 12%">{{selectedCony.outstandingBalanceDto}}</td>
+                        <td style="width: 12%">{{getPendingOutStandingBalance(selectedCony)}}</td>
+                        <td style="width: 12%">{{selectedCony.connectionDetailDto.totalConnected}}</td>
+                        <td style="width: 12%">{{selectedCony.connectionDetailDto.totalDIsConnected}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="card" style="background: rgba(255, 255, 255, 0.50);">
+    
+    <div class="card-header">
+        <strong>BRN Detail</strong>
+    </div>
+    
+    <div class="card-block" style="padding-left: 25px;padding-right: 25px;;">
+
+        <div class="table-responsive" *ngIf="brnDetails.length>0">
+            <table class="table table-bordered table-striped table-sm scrolable-table">
+                <thead>
+                    <tr>
+                        <th style="width: 5%"></th>
+                        <th style="width: 11%">BrnNumber</th>
+                        <th style="width: 12%">Segment</th>
+                        <th style="width: 12%">NonPayInvoiceCount</th>
+                        <th style="width: 12%">NumberOfAssociatedContract</th>
+                        <th style="width: 12%">OutstandingBalance</th>
+                        <th style="width: 12%">PendingOutStandingBalance</th>
+                        <th style="width: 12%">TotalConnections</th>
+                        <th style="width: 12%">TotalDisconnected</th>
+                    </tr>
+                </thead>
+                <tbody style="max-height: 21.8em;" id="brnDetailsListTablebody"
+                    (keydown)="onBrnDetailListKeydown($event)">
+                    <tr *ngFor="let brnDetail of brnDetails; let i = index;" [ngClass]="{'table-tr-custom-selected': isBrnDetailSelected(brnDetail)}"
+                    (click)="onBrnDetailClicked(brnDetail, i);">
+                        <td style="width: 5%">
+                        <button class="btn btn-warning btn-xs" type="button" style="cursor: pointer" data-toggle="tooltip" data-placement="top" title="Select">
+                            <i class="fa fa-hand-o-up"></i>
+                        </button>
+                        </td>
+                        <td style="width: 11%;text-align: left">{{brnDetail.brnNo}}</td>
+                        <td style="width: 12%;text-align: left">{{brnDetail.contractDtoList[0].busSegment}}</td>
+                        <td style="width: 12%;text-align: left">{{brnDetail.nonPayInvoiceCount}}</td>
+                        <td style="width: 12%">{{brnDetail.contractDtoList.length}}</td>
+                        <td style="width: 12%">{{getOutstandingBalace(brnDetail)}}</td>
+                        <td style="width: 12%">{{getPendingOutStandingBalance(brnDetail)}}</td>
+                        <td style="width: 12%">{{gettotalConnection(brnDetail.connectionDetailDto)}}</td>
+                        <td style="width: 12%">{{brnDetail.connectionDetailDto.npmt}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="card" style="background: rgba(255, 255, 255, 0.50);" *ngIf="selectedBrnDetail">
+    
+    <div class="card-header">
+        <strong>Contract Detail</strong>
+    </div>
+    
+    <div class="card-block" style="padding-left: 25px;padding-right: 25px;;">
+
+        <div class="table-responsive" *ngIf="selectedBrnDetail">
+            <table class="table table-bordered table-striped table-sm scrolable-table">
+                <thead>
+                    <tr>
+                        <th style="width: 5%"></th>
+                        <th style="width: 15%">ContractNo</th>
+                        <th style="width: 15%">CreatedDate</th>
+                        <th style="width: 15%">Balance</th>
+                        <th style="width: 12%">NonPayInvoiceCount</th>
+                        <th style="width: 12%">TotalConnections</th>
+                        <th style="width: 12%">TotalDisconnected</th>
+                    </tr>
+                </thead>
+                <tbody style="max-height: 21.8em;" id="contractNumberDetailsListTablebody"
+                    (keydown)="onContractDetailListKeydown($event)">
+                    <tr *ngFor="let contractDetail of selectedBrnDetail.contractDtoList; let i = index;" [ngClass]="{'table-tr-custom-selected': isContractDetailSelected(contractDetail)}"
+                    (click)="onContractDetailClicked(contractDetail, i);">
+                        <td style="width: 5%">
+                        <button class="btn btn-warning btn-xs" type="button" style="cursor: pointer" data-toggle="tooltip" data-placement="top" title="Select">
+                            <i class="fa fa-hand-o-up"></i>
+                        </button>
+                        </td>
+                        <td style="width: 16%">{{contractDetail.contractNo}}</td>
+                        <td style="width: 16%">{{contractDetail.createdDate}}</td>
+                        <td style="width: 16%">{{getBalance(contractDetail, selectedBrnDetail)}}</td>
+                        <td style="width: 12%">{{contractDetail.nonPayInvoiceCount}}</td>
+                        <td style="width: 12%">{{gettotalConnection(contractDetail.connectionDetailDto)}}</td>
+                        <td style="width: 12%">{{contractDetail.connectionDetailDto.npmt}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- <div class="card" style="background: rgba(255, 255, 255, 0.50);" *ngIf="selectedBrnDetail">
+    
+    <div class="card-header">
+        <strong>Outstanding Balance Detail</strong>
+    </div>
+    
+    <div class="card-block" style="padding-left: 25px;padding-right: 25px;;">
+
+        <div class="table-responsive" *ngIf="selectedBrnDetail">
+            <table class="table table-bordered table-striped table-sm scrolable-table" style="width: 50%">
+                <thead>
+                    <tr>
+                        <th style="width: 5%"></th>
+                        
+                        <th style="width: 15%">ContractNo</th>
+                        <th style="width: 15%">Balance</th>
+                        
+                    </tr>
+                </thead>
+                <tbody style="max-height: 21.8em;" id="outstandingBalanceDetailListTablebody"
+                    (keydown)="onOutstandingBalanceDetailListKeydown($event)">
+                    <tr *ngFor="let outstandingBalanceDetail of selectedBrnDetail.outstandingBalanceDtos; let i = index;" 
+                                [ngClass]="{'table-tr-custom-selected': isOutstandingBalanceDetailSelected(outstandingBalanceDetail)}"
+                    (click)="onOutstandingBalanceDetailClicked(outstandingBalanceDetail, i);">
+                        <td style="width: 5%">
+                        <button class="btn btn-warning btn-xs" type="button" style="cursor: pointer" data-toggle="tooltip" data-placement="top" title="Select">
+                            <i class="fa fa-hand-o-up"></i>
+                        </button>
+                        </td>
+                        <td style="width: 22.5%">{{outstandingBalanceDetail.contractNo}}</td>
+                        <td style="width: 22.5%">{{outstandingBalanceDetail.balance}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div> -->
+
+
+
+
+

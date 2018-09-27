@@ -15,7 +15,7 @@ public class BudgetMapper implements RowMapper<Budget> {
         Budget budget = new Budget();
         budget.setBudgetId(resultSet.getLong("BUDGET_ID"));
         budget.setMouAgreementBudgetTypeId(resultSet.getLong("MOU_AGREEMENT_BUDGET_TYPE_ID"));
-        budget.setMouCustomerId(resultSet.getLong("MOU_CUSTOMER_ID"));
+        //budget.setMouCustomerId(resultSet.getLong("MOU_CUSTOMER_ID"));
         budget.setBudgetAmount(resultSet.getDouble("BUDGET_AMOUNT"));
         budget.setStartDate(resultSet.getDate("BUDGET_START_DATE"));
         budget.setSubPeriodCode(resultSet.getString("SUB_PERIOD_CODE"));

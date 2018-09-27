@@ -1,0 +1,19 @@
+export class DashboardAreas {
+  static Home = 'home';
+  static DeviceRequest = 'device-request';
+  static CallCredits = 'call-credits';
+  static DirectDDF = 'Direct-DDF';
+  static Fixed = 'Fixed';
+  static MemoRequest = 'memo-request';
+  static NewSolutionReq = 'new-solution-req';
+  static NSR = 'nsr';
+  static CompletedReq = 'completed-req';
+  static ApprovalReq = 'approval-req';
+  static PendingReq = 'pending-req';
+  static RejectedReq = 'rejected-req';
+  static CanceledReq = 'canceled-req';
+  static PendingDirectDDF = 'pending-direct-ddf';
+  static CompletedDirectDDF = 'completed-direct-ddf';
+  static RejectedDirectDDF = 'rejected-direct-ddf';
+  static Approval = 'approval';
+}

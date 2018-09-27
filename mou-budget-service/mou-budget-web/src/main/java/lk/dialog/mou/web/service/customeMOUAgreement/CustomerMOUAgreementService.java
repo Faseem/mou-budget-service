@@ -7,4 +7,5 @@ import lk.dialog.mou.domain.CustomerMOUAgreement;
  */
 public interface CustomerMOUAgreementService {
     CustomerMOUAgreement addCustomerMOUAgreement(CustomerMOUAgreement customerMOUAgreement);
+    CustomerMOUAgreement getCustomerMOUAgreementByKeys(CustomerMOUAgreement customerMOUAgreement);
 }

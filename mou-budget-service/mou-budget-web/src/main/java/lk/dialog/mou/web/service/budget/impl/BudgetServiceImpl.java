@@ -6,6 +6,8 @@ import lk.dialog.mou.web.service.budget.BudgetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by Aux072 on 19/09/2018.
  */
@@ -18,5 +20,10 @@ public class BudgetServiceImpl implements BudgetService {
     @Override
     public Budget addBudgetType(Budget budget) {
         return budgetRepository.addBudgetType(budget);
+    }
+
+    @Override
+    public List<Budget> getBudgetsForMouAgreementBudgetTypeId(Long mouAgreementBudgetTypeId) {
+        return budgetRepository.getBudgetsForMouAgreementBudgetTypeId(mouAgreementBudgetTypeId);
     }
 }

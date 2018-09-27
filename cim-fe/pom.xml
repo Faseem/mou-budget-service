@@ -1,0 +1,115 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>om-fornt-end</artifactId>
+    <version>1.10.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>om-front-end</name>
+    <description>Dialog Order Management Angular Module</description>
+
+  <parent>
+    <artifactId>om-parent</artifactId>
+    <groupId>lk.dialog</groupId>
+    <version>1.10.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+    <build>
+        <finalName>om-front-end</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                          <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                          <!-- We are not interested in packaging om-front-end as Spring Boot Application -->
+                          <skip>true</skip>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>dist</directory>
+                            <includes>
+                              <include>*</include>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>install node and npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                        <configuration>
+                            <nodeVersion>v6.9.0</nodeVersion>
+                            <npmVersion>3.10.8</npmVersion>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>prod</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run-script build</arguments>
+                        </configuration>
+                        <phase>generate-resources</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--<plugin>-->
+                <!--<artifactId>exec-maven-plugin</artifactId>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<version>1.4.0</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>angular-cli build</id>-->
+                        <!--<goals>-->
+                            <!--<goal>exec</goal>-->
+                        <!--</goals>-->
+                        <!--<phase>generate-resources</phase>-->
+                        <!--<configuration>-->
+                            <!--<executable>node_modules/@angular/cli/bin/ng</executable>-->
+                            <!--<arguments>-->
+                                <!--<argument>build</argument>-->
+                                <!--<argument>&#45;&#45;prod</argument>-->
+                                <!--<argument>&#45;&#45;bh</argument>-->
+                                <!--<argument>/carrental-web/</argument>-->
+                            <!--</arguments>-->
+                            <!--<workingDirectory>${basedir}/target/angular2/carrental</workingDirectory>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
+</project>

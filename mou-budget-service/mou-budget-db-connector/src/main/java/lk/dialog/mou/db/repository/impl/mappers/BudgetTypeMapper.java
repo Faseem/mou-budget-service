@@ -15,8 +15,8 @@ public class BudgetTypeMapper  implements RowMapper<BudgetType> {
     public BudgetType mapRow(ResultSet resultSet, int i) throws SQLException {
         BudgetType budgetType = new BudgetType();
         budgetType.setBudgetTypeId(resultSet.getLong("BUDGET_TYPE_ID"));
-        budgetType.setBudgetName(resultSet.getString("BUDGET_NAME"));
-        budgetType.setDescription(resultSet.getString("DESCRIPTION"));
+        budgetType.setBudgetCode(resultSet.getString("BUDGET_CODE"));
+        //budgetType.setDescription(resultSet.getString("DESCRIPTION"));
         return budgetType;
     }
 }

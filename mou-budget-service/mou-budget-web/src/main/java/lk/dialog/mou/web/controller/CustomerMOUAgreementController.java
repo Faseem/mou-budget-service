@@ -36,4 +36,15 @@ public class CustomerMOUAgreementController {
 
     }
 
+    @EnableAudit(description = "getCustomerMOUAgreementByKeys")
+    @GetMapping(value = "/getCustomerMOUAgreementByKeys")
+    ResponseEntity<APIResponse> getCustomerMOUAgreementByKeys(@RequestBody CustomerMOUAgreement customerMOUAgreement,
+                                                        @RequestHeader(value = "user") String user){
+        return ResponseBuilder
+                .build(
+                        ResponseBuilder
+                                .success(customerMOUAgreementService.getCustomerMOUAgreementByKeys(customerMOUAgreement)));
+
+    }
+
 }

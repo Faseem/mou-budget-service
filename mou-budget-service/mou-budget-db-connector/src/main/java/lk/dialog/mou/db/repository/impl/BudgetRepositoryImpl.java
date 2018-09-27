@@ -35,7 +35,7 @@ public class BudgetRepositoryImpl implements BudgetRepository {
         Map<String,Object> parameters = new HashMap<>();
         //parameters.put("BUDGET_ID", budget.getBudgetId());
         parameters.put("MOU_AGREEMENT_BUDGET_TYPE_ID", budget.getMouAgreementBudgetTypeId());
-        parameters.put("MOU_CUSTOMER_ID", budget.getMouCustomerId());
+        //parameters.put("MOU_CUSTOMER_ID", budget.getMouCustomerId());
         parameters.put("BUDGET_AMOUNT", budget.getBudgetAmount());
         parameters.put("BUDGET_START_DATE", dateFormatter.format(budget.getStartDate()));
         parameters.put("SUB_PERIOD_CODE", budget.getSubPeriodCode());
@@ -47,7 +47,7 @@ public class BudgetRepositoryImpl implements BudgetRepository {
 
         namedParameterJdbcTemplate.update("INSERT INTO MOU.BUDGET (" +
                         "MOU_AGREEMENT_BUDGET_TYPE_ID," +
-                        "MOU_CUSTOMER_ID," +
+                        //"MOU_CUSTOMER_ID," +
                         "BUDGET_AMOUNT," +
                         "BUDGET_START_DATE," +
                         "SUB_PERIOD_CODE," +
@@ -56,15 +56,41 @@ public class BudgetRepositoryImpl implements BudgetRepository {
                         "USAGE_AMOUNT," +
                         "AVAILABLE_AMOUNT," +
                         "ACTIVE)" +
-                        " VALUES(:MOU_AGREEMENT_BUDGET_TYPE_ID, :MOU_CUSTOMER_ID, :BUDGET_AMOUNT, :BUDGET_START_DATE," +
+                        " VALUES(:MOU_AGREEMENT_BUDGET_TYPE_ID, :BUDGET_AMOUNT, :BUDGET_START_DATE," +
                         " :SUB_PERIOD_CODE, :SUB_PERIOD_CODE_DESC, :BUDGET_END_DATE, :USAGE_AMOUNT, :AVAILABLE_AMOUNT, :ACTIVE)",
                 parameters);
         return getBudgetByKeys(budget);
     }
 
+    @Override
+    public List<Budget> getBudgetsForMouAgreementBudgetTypeId(Long mouAgreementBudgetTypeId) {
+        String query = "SELECT * FROM MOU.BUDGET WHERE MOU_AGREEMENT_BUDGET_TYPE_ID=:MOU_AGREEMENT_BUDGET_TYPE_ID";
+
+        Map<String, Object> params = new HashMap<>();
+        params.put("MOU_AGREEMENT_BUDGET_TYPE_ID", mouAgreementBudgetTypeId);
+
+        namedParameterJdbcTemplate.query(query, params,new BudgetMapper());
+        List<Budget> budgetList = namedParameterJdbcTemplate.query(query, params, (rs, i) -> {
+            Budget budgetReturned = new Budget();
+            budgetReturned.setBudgetId(rs.getLong("BUDGET_ID"));
+            budgetReturned.setMouAgreementBudgetTypeId(rs.getLong("MOU_AGREEMENT_BUDGET_TYPE_ID"));
+            //budgetReturned.setMouCustomerId(rs.getLong("MOU_CUSTOMER_ID"));
+            budgetReturned.setBudgetAmount(rs.getDouble("BUDGET_AMOUNT"));
+            budgetReturned.setStartDate(rs.getDate("BUDGET_START_DATE"));
+            budgetReturned.setSubPeriodCode(rs.getString("SUB_PERIOD_CODE"));
+            budgetReturned.setSubPeriodCodeDesc(rs.getString("SUB_PERIOD_CODE_DESC"));
+            budgetReturned.setEndDate(rs.getDate("BUDGET_END_DATE"));
+            budgetReturned.setUsageAmount(rs.getDouble("USAGE_AMOUNT"));
+            budgetReturned.setAvailableAmount(rs.getDouble("AVAILABLE_AMOUNT"));
+            budgetReturned.setActive(rs.getBoolean("ACTIVE"));
+            return budgetReturned;
+        });
+        return budgetList.size() > 0 ? budgetList : null;
+    }
+
     public Budget getBudgetByKeys(Budget budget) {
         String query = "SELECT * FROM MOU.BUDGET WHERE MOU_AGREEMENT_BUDGET_TYPE_ID=:MOU_AGREEMENT_BUDGET_TYPE_ID" +
-                " AND MOU_CUSTOMER_ID=:MOU_CUSTOMER_ID"+
+                //" AND MOU_CUSTOMER_ID=:MOU_CUSTOMER_ID"+
                 " AND BUDGET_AMOUNT=:BUDGET_AMOUNT"+
                 " AND BUDGET_START_DATE=:BUDGET_START_DATE"+
                 //" AND SUB_PERIOD_CODE=:SUB_PERIOD_CODE"+
@@ -76,7 +102,7 @@ public class BudgetRepositoryImpl implements BudgetRepository {
 
         Map<String, Object> params = new HashMap<>();
         params.put("MOU_AGREEMENT_BUDGET_TYPE_ID", budget.getMouAgreementBudgetTypeId());
-        params.put("MOU_CUSTOMER_ID", budget.getMouCustomerId());
+        //params.put("MOU_CUSTOMER_ID", budget.getMouCustomerId());
         params.put("BUDGET_AMOUNT", budget.getBudgetAmount());
         params.put("BUDGET_START_DATE", dateFormatter.format(budget.getStartDate()));
         //params.put("SUB_PERIOD_CODE", budget.getSubPeriodCode());
@@ -91,7 +117,7 @@ public class BudgetRepositoryImpl implements BudgetRepository {
             Budget budgetReturned = new Budget();
             budgetReturned.setBudgetId(rs.getLong("BUDGET_ID"));
             budgetReturned.setMouAgreementBudgetTypeId(rs.getLong("MOU_AGREEMENT_BUDGET_TYPE_ID"));
-            budgetReturned.setMouCustomerId(rs.getLong("MOU_CUSTOMER_ID"));
+            //budgetReturned.setMouCustomerId(rs.getLong("MOU_CUSTOMER_ID"));
             budgetReturned.setBudgetAmount(rs.getDouble("BUDGET_AMOUNT"));
             budgetReturned.setStartDate(rs.getDate("BUDGET_START_DATE"));
             budgetReturned.setSubPeriodCode(rs.getString("SUB_PERIOD_CODE"));
@@ -104,4 +130,6 @@ public class BudgetRepositoryImpl implements BudgetRepository {
         });
         return budgetList.size() > 0 ? budgetList.get(0) : null;
     }
+
+
 }
